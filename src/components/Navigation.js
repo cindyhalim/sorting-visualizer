@@ -3,18 +3,17 @@ import React from "react";
 export default function Navigation({
   arrayLength,
   updateArrayLength,
-  updateArrayValues,
-  randomizeArray
+  updateArrayValues
 }) {
   return (
     <div>
       <input
         type="range"
-        min={5}
+        min={0}
         max={50}
         onChange={event => {
           updateArrayLength(event.target.value);
-          // updateArrayValues(arrayLength);
+          updateArrayValues(arrayLength);
         }}
       ></input>
       <button onClick={() => updateArrayValues(arrayLength)}>

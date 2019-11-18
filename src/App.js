@@ -4,8 +4,8 @@ import BarChart from "./components/BarChart";
 import "./App.css";
 
 function App() {
-  const [arrayLength, setArrayLength] = useState(5);
-  const [arrayValues, setArrayValues] = useState([5, 12, 7, 35, 22]);
+  const [arrayLength, setArrayLength] = useState(0);
+  const [arrayValues, setArrayValues] = useState([]);
 
   const updateArrayLength = newArrayLength => {
     setArrayLength(newArrayLength);
